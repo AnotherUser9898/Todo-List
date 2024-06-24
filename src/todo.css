@@ -1,0 +1,73 @@
+.todo-container {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-template-rows: auto;
+    padding: 20px;
+    padding-left: 0px;
+    margin: 10px 0px 10px 20px;
+    row-gap: 10px;
+    column-gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+.expand-todo,.remove-todo {
+    grid-column-start: 2;
+}
+
+.todo-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.todo-date {
+    grid-column-start: 2;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.todo-button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #60a5fa;
+    border: solid 2px #60a5fa;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 5px;
+    width: 80px;
+}
+
+.task-form,.edit-task-form,.project-form {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.submit,.save-changes,.submit-project {
+    width: max-content;
+    padding: 5px 10px;
+    background-color: #60a5fa;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.add-task-dialog,.edit-task-dialog,.add-project-dialog {
+    width: 20vw;
+    border: none;
+    border-radius: 5px;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(1px);
+}
+
+.edit-task-dialog {
+    margin-top: 35vh;
+    border: 1px solid gray;
+}

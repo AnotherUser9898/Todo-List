@@ -1,0 +1,12 @@
+.project-title {
+    margin-left: 20px;
+    border-bottom: solid 2px gray;
+    padding: 20px 0px 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.project-container {
+    margin-right: 200px;
+}
